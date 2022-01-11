@@ -12,10 +12,13 @@ export class Question {
     this.answer = answer;
   }
 
-  correctAnswer() {
+  /**
+   *
+   * @param {string} choice choice some text to guess
+   * @returns {boolean} return true if the answer is correct
+   */
+
+  correctAnswer(choice) {
     return choice === this.answer;
   }
 }
-
-//esto me devuelve un objeto nuevo
-new Question("");
