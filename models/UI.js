@@ -19,7 +19,8 @@ export class UI {
 
     for (let i = 0; i < choices.length; i++) {
       const button = document.createElement("button");
-      button.innerText = "some button";
+      button.innerText = choices[i];
+      button.className = "button";
 
       choicesContainer.append(button);
     }
