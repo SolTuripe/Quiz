@@ -14,6 +14,6 @@ export const data = [
   {
     question: "Which programming language is not good for styling websites?",
     choices: ["stylus", "less", "sass", "PostCSS", "NextCSS"],
-    answer: "PostCSS",
+    answer: "NextCSS",
   },
 ];

@@ -27,4 +27,16 @@ export class UI {
       choicesContainer.append(button);
     }
   }
+/**
+ * 
+ * @param {number} score the total score
+ */
+  showScores(score) {
+    const quizEndHTML = `
+    <h1>Result</h1>
+    <h2>Your Score: ${score}</h2>
+    `
+    const element = document.querySelector("#quiz")
+    element.innerHTML = quizEndHTML
+  }
 }
