@@ -27,16 +27,27 @@ export class UI {
       choicesContainer.append(button);
     }
   }
-/**
- * 
- * @param {number} score the total score
- */
+  /**
+   *
+   * @param {number} score the total score
+   */
   showScores(score) {
     const quizEndHTML = `
     <h1>Result</h1>
     <h2>Your Score: ${score}</h2>
-    `
-    const element = document.querySelector("#quiz")
-    element.innerHTML = quizEndHTML
+    `;
+    const element = document.querySelector("#quiz");
+    element.innerHTML = quizEndHTML;
+  }
+
+  /**
+   *
+   * @param {number} currentIndex the current index of the quiz
+   * @param {number} total the total questions
+   */
+
+  showProgress(currentIndex, total) {
+    const element = document.querySelector("#progress");
+    element.innerHTML = `Question ${currentIndex} of ${total}`;
   }
 }
